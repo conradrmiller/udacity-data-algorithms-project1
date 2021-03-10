@@ -1,0 +1,14 @@
+Task 0
+This algorithm most likely runs in some form of constant time, like O(2).
+
+Task1
+This algorithm most likely runs in some form of linear time, like O(2n).
+
+Task2
+This algorithm most likely runs in some form of linear time, like O(2n).
+
+Task3
+This algorithm most likely runs in quadratic time, something like O(n^3) due to the number of nested loops.
+
+Task4
+This algorithm is most likely runs in some version of linear time, something like O(3n).
