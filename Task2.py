@@ -45,5 +45,6 @@ for x in totals:
 print ("{} spent the longest time, {} seconds, on the phone during September 2016.".format(biggestNumber,biggestAmmount))
         
 
-
+# Big O estimation:
+# This algorithm most likely runs in some form of linear time, like O(2n).
 

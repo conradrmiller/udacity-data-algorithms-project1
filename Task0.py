@@ -26,4 +26,6 @@ print("First record of texts, {} texts {} at time {}".format(first_text[0], firs
 last_call = calls[-1]
 print("Last record of calls, {} calls {} at time {}, lasting {} seconds".format(last_call[0], last_call[1], last_call[2], last_call[3]))
 
+# Big O estimation:
+# This algorithm most likely runs in some form of constant time, like O(2).
 

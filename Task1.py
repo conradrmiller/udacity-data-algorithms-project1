@@ -36,3 +36,5 @@ for line in calls:
 
 print("There are {} different telephone numbers in the records.".format(len(phone_numbers)))
 
+# Big O estimation:
+# This algorithm most likely runs in some form of linear time, like O(2n).

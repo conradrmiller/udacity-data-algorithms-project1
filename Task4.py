@@ -25,11 +25,11 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
-#Possible telemarketers:
-#Make outgoing calls
-#Never send texts
-#Never recieve texts
-#Never recieve incoming calls
+# Possible telemarketers:
+# Make outgoing calls
+# Never send texts
+# Never recieve texts
+# Never recieve incoming calls
 
 sent_texts = []
 recieved_texts = []
@@ -56,4 +56,7 @@ for line in calls:
 possible_telemarketer.sort()
 print ("These numbers could be telemarketers: ")
 print(*possible_telemarketer, sep="\n")
+
+# Big O Estimation:
+# This algorithm is most likely runs in some version of linear time, something like O(3n).
 

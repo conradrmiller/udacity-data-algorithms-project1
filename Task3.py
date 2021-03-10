@@ -90,3 +90,6 @@ print(*unique_codes, sep="\n")
 
 print("{:.2f} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format(
     (bangalore_count/total_count)*100))
+
+# Big O estimation:
+# This algorithm most likely runs in quadratic time, something like O(n^3) due to the number of nested loops
