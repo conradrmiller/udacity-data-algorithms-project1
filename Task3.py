@@ -44,7 +44,7 @@ to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
 
-# Part A
+
 unique_codes = []
 total_count = 0
 bangalore_count = 0
@@ -58,7 +58,7 @@ def add_code(phone_number):
             prefix += x
             if x == ')':
                 break
-        if prefix not in unique_codes:    
+        if prefix not in unique_codes:
             unique_codes.append(prefix)
     elif phone_number[:3] == '140':
         if '140' not in unique_codes:
@@ -70,30 +70,23 @@ def add_code(phone_number):
             if x == ' ':
                 break
             prefix += x
-        if prefix not in unique_codes:    
+        if prefix not in unique_codes:
             unique_codes.append(prefix)
 
-        #stuff
-#Is the calling from number a Bangalore number?
 
+# Is the calling from number a Bangalore number?
 for line in calls:
     if '(080)' in line[0]:
         add_code(line[1])
         total_count += 1
         if '(080)' in line[1]:
-            bangalore_count +=1
-# Then store the prefix
-# Case for fixed lines
-# Case for Mobile numbers
-# Case for telemarketers
+            bangalore_count += 1
 
-# Format for printing
-# Print
 
 unique_codes.sort()
 
-print ("The numbers called by people in Bangalore have codes:")
-print (*unique_codes, sep="\n")
+print("The numbers called by people in Bangalore have codes:")
+print(*unique_codes, sep="\n")
 
-print ('total count {} bangalore count {}'.format(total_count,bangalore_count))
-print ("{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format((bangalore_count/total_count)*100))
+print("{:.2f} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format(
+    (bangalore_count/total_count)*100))
