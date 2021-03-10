@@ -46,6 +46,8 @@ The percentage should have 2 decimal digits
 
 # Part A
 unique_codes = []
+total_count = 0
+bangalore_count = 0
 
 
 def add_code(phone_number):
@@ -77,6 +79,9 @@ def add_code(phone_number):
 for line in calls:
     if '(080)' in line[0]:
         add_code(line[1])
+        total_count += 1
+        if '(080)' in line[1]:
+            bangalore_count +=1
 # Then store the prefix
 # Case for fixed lines
 # Case for Mobile numbers
@@ -89,3 +94,6 @@ unique_codes.sort()
 
 print ("The numbers called by people in Bangalore have codes:")
 print (*unique_codes, sep="\n")
+
+print ('total count {} bangalore count {}'.format(total_count,bangalore_count))
+print ("{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format((bangalore_count/total_count)*100))
