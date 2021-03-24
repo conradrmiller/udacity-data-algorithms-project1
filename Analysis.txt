@@ -1,14 +1,22 @@
 Task 0
-This algorithm most likely runs in some form of constant time, like O(2).
+Accessing the first and last items in the arrays of calls and texts(lines 23 and 26) happens in constant time.
+This algorithm runs runs in constant time, O(1).
 
 Task1
-This algorithm most likely runs in some form of linear time, like O(2n).
+On lines 25 and 31 there are loops through the lists with 'if not in' checks inside.
+The 'if not in' statements run in O(n^2) time.
+This algorithm runs in quadratic time, O(n^2).
 
 Task2
-This algorithm most likely runs in some form of linear time, like O(2n).
+On lines 26 there is a loop through the list with 'if not in' checks inside.
+The 'if not in' statements run in O(n^2) time.
+This algorithm runs in quadratic time, O(n^2).
 
 Task3
-This algorithm most likely runs in quadratic time, something like O(n^3) due to the number of nested loops.
+There are 3 non-nested loops and 'if not in' statements which all have a a worst-case time of O(n).
+There is a a sorting function on line 87. Sorting functions are O(n logn)
+This algorithm runs in Logarithmic time, O(n logn).
 
 Task4
-This algorithm is most likely runs in some version of linear time, something like O(3n).
+This algorithm contains 5 nested 'if not in' statements (line 49).
+The algorithm runs in a worst-case time of O(n^5). 

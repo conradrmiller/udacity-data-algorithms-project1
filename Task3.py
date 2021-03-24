@@ -70,8 +70,9 @@ def add_code(phone_number):
             if x == ' ':
                 break
             prefix += x
-        if prefix not in unique_codes:
-            unique_codes.append(prefix)
+        #Fixed, adding first 4 digits
+        if prefix[:4] not in unique_codes:
+            unique_codes.append(prefix[:4])
 
 
 # Is the calling from number a Bangalore number?
